@@ -343,6 +343,11 @@ li {
                 color: #c495d6;
                 outline: 0;
             }
+                #quantia-dep::-webkit-outer-spin-button,
+                #quantia-dep::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                }
+
                 #quantia-dep::placeholder {
                     color: #c495d6;
                 }
