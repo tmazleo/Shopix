@@ -1,0 +1,527 @@
+
+body {
+    background: linear-gradient(to bottom, #a24ec4  , #000000 600px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Jockey One;
+    background-attachment: fixed;
+    overflow-x: hidden ;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+    .carrinho {
+        float:right;
+        position: fixed;
+        right: 0;
+        top: 20%;
+        width: 3.7em;
+        color: white;
+        height: 2em;
+        border-radius: 8px 0 0 8px;
+        overflow: hidden;
+        background: rgba(0,0,0,.5);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(6px);
+        z-index: 11;
+        transition: width .3s, height .4s;
+    }
+    /*carrinho*/
+        #comp {
+            position: relative;
+            left: 5%;
+            bottom: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .comprar {
+                width: 6em;
+                height: 3em;
+                background: #077720;
+                color: white;
+                font-family: Jockey One;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .comprar:hover {
+                background: #1c8641;
+            }
+            .comprarnegativo {
+                width: 6em;
+                height: 3em;
+                background: #a32b2b;
+                color: white;
+                font-family: Jockey One;
+                border-radius: 5px;
+            
+            }
+                
+        #valcomp {
+            border-bottom: 1px solid #c495d6;
+            width: 6em;
+            height: 3em;
+        }
+        .carrinho::-webkit-scrollbar {
+            background: transparent;
+            width: 4px;
+        }
+        .carrinho:hover {
+            width: 22em;
+            height: auto;
+        }
+        
+        .carrinho p {
+            display: block;
+            width: 30em;
+            height: 2em;
+            margin:0;
+            margin-left: .3em;
+            margin-top: .2em;
+        }
+        .todosp {
+            display: grid;
+            grid-template-areas: "1 2 " "1 2 ";
+            grid-auto-rows:auto;
+            grid-gap: 0;
+            overflow: auto;
+            height: 23em;
+            padding: 1em;
+            
+        }
+        .todosp::-webkit-scrollbar {
+            background: transparent;
+            width: 4px;
+        }
+    /*Carrinho js*/
+        /*divs*/
+        .cards1js {
+            color: white;
+            border-radius: 8px;
+            width: 3em;
+            height: 3em;
+            padding: 2em;
+            background-image: url(src/controle.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform .2s;
+        }
+        .cards2js {
+            color: white;
+            border-radius: 8px;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2em;
+            background-image: url(src/headsey.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform .2s;
+        }
+        .cards3js {
+            color: white;
+            border-radius: 8px;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2em;
+            background-image: url(src/mouse.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform .2s;
+        }
+        .cards4js {
+            color: white;
+            border-radius: 8px;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2em;
+            background-image: url(src/teclado.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform .2s;
+        }
+        .cards5js {
+            color: white;
+            border-radius: 8px;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2em;
+            background-image: url(src/monitor.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform .2s;
+        }
+    
+    
+    
+    
+            .cards1js:hover, .cards2js:hover, .cards3js:hover, .cards4js:hover, .cards5js:hover {
+                transform: scale(1.2);
+            }
+             
+            
+        .btnremove {
+            width: 3em;
+            height: 2em;
+            border: 0;
+            background: #a24ec4;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .btnremove::after {
+            content: "X";
+            font-family: Jockey One;
+        }
+        .btnremove:hover {
+            background: #c495d6;
+        }
+
+
+
+        
+    .header {
+        width: 100vw;
+        height: 18vh;
+        border-bottom: 1px solid #c495d6;
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        background: rgba(88, 44, 102, 0.514);
+        
+    }
+        .logodiv {
+            margin-top: 1em;
+            width: auto;
+            height: auto;
+        
+        }
+            .logo {
+                font-size: 3em;
+                font-weight: 400;
+                color:#dd84d9;
+                margin-left: 8%;
+                text-shadow: 1px 1px #2b102b, 1.2px 1.2px #1b0a1b ;
+                
+            }
+        .headnav {
+            font-size: 100%;
+            margin-top: 3.5em;
+            margin-left: 10%;
+            overflow: hidden;
+            width: 55vw;
+            
+        }
+            .headnav ul {
+                display: flex;
+                padding: 0;
+            }
+                
+            .headnav li {
+                height: 2.5em;
+                margin-left: 10%;
+                text-align: center;
+                transition: background .2s;
+                
+            }
+            
+            .linknav {
+                display: inline-block;
+                height: 3em;
+            }
+                .linknav:hover {
+                    color: #c495d6;
+                }
+    .moedasTela {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid #c495d6;
+        border-top: none;
+        border-radius: 0 0 40px 40px;
+        width: 40vw;
+        height: 10vh;
+        font-size: 1em;
+        position: fixed;
+        margin-top: 7.4em;
+        backdrop-filter: blur(10px);
+        background:  rgba(88, 44, 102, 0.514);
+        z-index: 10;
+    
+    }
+        .moedasTela p {
+            margin-left: .5em;
+            pointer-events: none;
+            display: block;
+            width: 10em;
+        }
+        .moedashp {
+            color: #000;
+            width: 9em;
+            height: 3em;
+            display: inline-block;
+            margin-top: 1.6em;
+
+            
+        }
+    .deposito {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #c495d6;
+        padding-top: 12em;
+    }
+       
+        h2 {
+            font-size: 2em;
+            font-weight: 100;
+            margin-top: 0;
+            pointer-events: none;
+            color: #c495d6;
+
+            
+        }
+        .inpDep {
+            margin: 1em auto;
+            border: 1px solid #c495d6;
+            border-radius: 5px;
+            width: 60vw;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .pinp {
+                font-size: 1.25em;
+                pointer-events: none;
+
+            }
+            #quantia-dep {
+                background: transparent;
+                border: 0;
+                border-bottom: 1px solid #c495d6;
+                margin-top: 1em;
+                font-size: 1.25em;
+                text-align: center;
+                width: 40vw;
+                color: #c495d6;
+                outline: 0;
+            }
+                #quantia-dep::placeholder {
+                    color: #c495d6;
+                }
+                #quantia-dep:hover {
+                    outline: 1px solid #c495d6;
+                }  
+                #quantia-dep:focus {
+                    border: 0;
+                    outline: 1px solid #c495d6;
+                }
+            #btndep {
+                border: 1px solid #c495d6;
+                border-radius: 5px;
+                background: transparent;
+                color: #c495d6;
+                font-family: Jockey one;
+                width: 7em;
+                height: 2.5em;
+                margin-top: 3em;
+                font-size: 1em;
+                cursor: pointer;
+                transition: background .2s;
+            }
+                #btndep:hover {
+                    background: #c495d6;
+                    color: #000;
+                }
+    
+
+    
+    .footer {
+        width: 100vw;
+        margin: 8em 0 0;
+    }
+        .fim {
+            
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            width: auto;
+            
+        }
+        .fim p {
+            pointer-events: none;
+        }
+        .links {
+            
+            width: 32vw;
+            
+            }
+            .links ul{
+                display: flex;
+                flex-direction: row;
+            
+                }
+                .links li {
+                    margin-left: 8%;
+                    }
+                    .links a {
+                        color: white;
+                        display: block;
+                        transition: transform .2s;
+                    }
+                    .links a:hover {
+                        transform: scale(1.2);
+                    }
+            
+    .loja {
+        width: 70vw;
+        height: 50vh;
+        margin: 2em auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .prod {
+        width: 69vw;
+        height: 40vh;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1em;
+    }
+    .prod::-webkit-scrollbar {
+        background: transparent;
+        height: 4px;
+    }
+    .prod::-webkit-scrollbar-thumb {
+        background: #c495d6;
+        border-radius: 5px;
+
+    }
+    
+    .cards {
+        background: rgba(0,0,0,.3);
+        color: white;
+        font-weight: 100;
+        backdrop-filter: blur(4px);
+        -o-backdrop-filter:blur(4px);
+        -ms-backdrop-filter:blur(4px);
+        -moz-backdrop-filter:blur(4px);
+        -webkit-backdrop-filter:blur(4px);
+        border-radius: 8px;
+        width: 15em;
+        height: 10em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 1.5em; 
+        margin-top: .5em;
+        padding: 2em;
+        
+    }
+
+
+        .cards:hover {
+            outline: 1px solid #c495d6;
+        }
+        .btnadd {
+            width: 6em;
+            background: #c495d6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: .5em
+        }
+        .btnadd:hover {
+            outline: 1px solid #c495d6;
+        }
+    .imgs {
+        width: 5em;
+        height: 5em;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+        #img1 {
+            background-image: url(src/controle.png);
+        }
+        #img2 {
+            background-image: url(src/headsey.png);
+        }
+        #img3 {
+            background-image: url(src/mouse.png);
+        }
+        #img4 {
+            background-image: url(src/teclado.png);
+        }
+        #img5 {
+            background-image: url(src/monitor.png);
+        }
+    
+
+@media  screen and (min-width: 650px){
+    .header {
+        justify-content: space-between;
+    }
+    .headnav li {
+        display: block;
+        margin-left: 4%;
+        width: 5.5em;
+        border-radius: 10px;
+        transition: box-shadow .5s;
+    }
+    .headnav li:hover {
+        box-shadow:  inset 2px 2px 3px #2d0a3b;
+    }
+    .linknav {
+        font-size: 1.3em;
+    }
+
+    .logo {
+        font-size: 5em;
+        margin-left: 1em;
+    }
+}
