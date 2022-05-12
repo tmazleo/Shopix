@@ -217,8 +217,6 @@ li {
         height: 18vh;
         border-bottom: 1px solid #c495d6;
         display: flex;
-        position: fixed;
-        z-index: 10;
         backdrop-filter: blur(10px);
         background: rgba(88, 44, 102, 0.514);
         
@@ -276,11 +274,9 @@ li {
         width: 40vw;
         height: 10vh;
         font-size: 1em;
-        position: fixed;
-        margin-top: 7.4em;
         backdrop-filter: blur(10px);
         background:  rgba(88, 44, 102, 0.514);
-        z-index: 10;
+
     
     }
         .moedasTela p {
@@ -305,7 +301,6 @@ li {
         flex-direction: column;
         align-items: center;
         border-bottom: 1px solid #c495d6;
-        padding-top: 12em;
     }
        
         h2 {
@@ -417,7 +412,7 @@ li {
             
     .loja {
         width: 70vw;
-        height: 50vh;
+        height: 60vh;
         margin: 2em auto;
         display: flex;
         flex-direction: column;
@@ -427,7 +422,7 @@ li {
     }
     .prod {
         width: 69vw;
-        height: 40vh;
+        height: 45vh;
         overflow: auto;
         display: flex;
         flex-direction: row;
