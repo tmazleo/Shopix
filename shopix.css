@@ -276,8 +276,7 @@ li {
         font-size: 1em;
         backdrop-filter: blur(10px);
         background:  rgba(88, 44, 102, 0.514);
-        
-    
+
     }
         .moedasTela p {
             margin-left: .5em;
@@ -339,10 +338,18 @@ li {
                 color: #c495d6;
                 outline: 0;
             }
+
             #quantia-dep::-webkit-outer-spin-button,
             #quantia-dep::-webkit-inner-spin-button {
                 -webkit-appearance: none;
             }
+
+                #quantia-dep::-webkit-outer-spin-button,
+                #quantia-dep::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                }
+
+
                 #quantia-dep::placeholder {
                     color: #c495d6;
                 }
@@ -406,7 +413,7 @@ li {
             
     .loja {
         width: 70vw;
-        height: 50vh;
+        height: 60vh;
         margin: 2em auto;
         display: flex;
         flex-direction: column;
@@ -416,7 +423,7 @@ li {
     }
     .prod {
         width: 69vw;
-        height: 40vh;
+        height: 45vh;
         overflow: auto;
         display: flex;
         flex-direction: row;
