@@ -139,24 +139,24 @@ btnadd5.addEventListener('click', function(){
     btnremov.classList.add('btnremove');
     div2.classList.toggle('cards5js');
     
+   
     carrinho.appendChild(div1);
     div1.appendChild(div2);
     div1.appendChild(btnremov);
     divcar.textContent = 'R$'+meuCarrinho;
-
     btnremov.addEventListener('click', ()=> {
         meuCarrinho = meuCarrinho - card5;
         divcar.textContent = 'R$'+meuCarrinho; 
         div1.setAttribute('style', 'display: none');  
-        div2.setAttribute('style', 'display: none'); 
-        
-    });  
+        div2.setAttribute('style', 'display: none');  
+    });
 })
 
 btncomprar.addEventListener('click', ()=>{
     card1, card2, card3, card4, card5 = 0;
     if (meuCarrinho <= 0) {
         alert('Você precisa adicionar algo ao seu carrinho!');
+        btncomprar.setAttribute('style', 'background-color: red')
         
         
     } else if ((depositado < meuCarrinho) || (depositado == 0)){
