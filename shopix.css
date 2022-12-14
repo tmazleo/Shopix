@@ -217,8 +217,6 @@ li {
         height: 18vh;
         border-bottom: 1px solid #c495d6;
         display: flex;
-        position: fixed;
-        z-index: 10;
         backdrop-filter: blur(10px);
         background: rgba(88, 44, 102, 0.514);
         
@@ -276,11 +274,9 @@ li {
         width: 40vw;
         height: 10vh;
         font-size: 1em;
-        position: fixed;
-        margin-top: 7.4em;
         backdrop-filter: blur(10px);
         background:  rgba(88, 44, 102, 0.514);
-        z-index: 10;
+        
     
     }
         .moedasTela p {
@@ -305,7 +301,7 @@ li {
         flex-direction: column;
         align-items: center;
         border-bottom: 1px solid #c495d6;
-        padding-top: 12em;
+
     }
        
         h2 {
@@ -343,16 +339,14 @@ li {
                 color: #c495d6;
                 outline: 0;
             }
+            #quantia-dep::-webkit-outer-spin-button,
+            #quantia-dep::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
                 #quantia-dep::placeholder {
                     color: #c495d6;
                 }
-                #quantia-dep:hover {
-                    outline: 1px solid #c495d6;
-                }  
-                #quantia-dep:focus {
-                    border: 0;
-                    outline: 1px solid #c495d6;
-                }
+                
             #btndep {
                 border: 1px solid #c495d6;
                 border-radius: 5px;

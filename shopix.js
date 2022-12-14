@@ -2,9 +2,10 @@ let moedaShopix = document.querySelector('#moedashopix');
 let btnDep = document.querySelector('#btndep');
 let quantiaDep = document.querySelector('#quantia-dep');
 let depositado = 0;
+parseFloat(quantiaDep);
 
 parseFloat(depositado);
-parseFloat(quantiaDep);
+
 depositado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 quantiaDep.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
